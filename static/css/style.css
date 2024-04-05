@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 4em;
+    font-weight: bold;
+    font-style: italic;
+    color: #834e4e;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.countdown-section {
+    display: inline-block;
+    margin: 0 10px;
+    width: 200px;
+    /* 设置圆角矩形的宽度 */
+}
+
+.countdown-value {
+    font-size: 1.5em;
+    background-color: #f4a07a;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.countdown-unit {
+    font-weight: bold;
+    font-size: 1em;
+    color: #8b484b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#countdown {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #b96049;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
