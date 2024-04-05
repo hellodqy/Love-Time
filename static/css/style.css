@@ -57,3 +57,43 @@ body {
     color: #b96049;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+        /* 在小屏幕上适当缩小容器宽度 */
+    }
+
+    .countdown-section {
+        margin: 0 10px;
+        width: 200px;
+        /* 设置圆角矩形的宽度 */
+    }
+
+    .countdown-value {
+        font-size: 1.2em;
+        /* 在小屏幕上适当调整字体大小 */
+        padding: 5px 8px;
+        /* 在小屏幕上适当调整内边距 */
+        display: inline-block;
+        margin: 10px 30px 0px 20px;
+    }
+
+    .countdown-unit {
+        font-size: 0.8em;
+        /* 在小屏幕上适当调整字体大小 */
+        display: inline-block;
+        /* 让数字和单位在同一行显示 */
+    }
+
+    .title {
+        font-size: 2.5em;
+        /* 在小屏幕上适当调整标题字体大小 */
+    }
+
+    .countdown-section {
+        display: flex;
+        align-items: center;
+    }
+}
