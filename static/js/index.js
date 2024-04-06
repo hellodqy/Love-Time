@@ -31,6 +31,8 @@ function updateCountdown() {
     // 添加 0 补齐函数
     // 天数一定是位数最多的，如果当前数字小于天数所对应的量级，就需要补足量级之差那么多个'0'
     function addZero(num) {
+        if (num === 0)
+            return `${"0".repeat(Math.log10(determineMagnitude(days)) + 1)}`;
         if (window.innerWidth <= 1024)
             return num < determineMagnitude(days) ? `${"0".repeat(Math.log10(determineMagnitude(days)) - Math.log10(determineMagnitude(num)))}${num}` : num;
         else
