@@ -41,7 +41,7 @@ function updateCountdown() {
 
     // 更新时间
     document.querySelector('#days').innerText = addZero(days);
-    document.querySelector('#hours').innerText = addZero(hours);
+    document.querySelector('#hours').innerText = addZero(hours + 8);
     document.querySelector('#minutes').innerText = addZero(minutes);
     document.querySelector('#seconds').innerText = addZero(seconds);
 }
